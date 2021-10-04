@@ -1,19 +1,12 @@
+// mobx stuff
 import { makeAutoObservable } from 'mobx';
-import _ from 'lodash'
 import { toJS } from 'mobx'
 
-const BuildCusines = dishes => {
-    return _.chain(dishes)
-        .reduce(function (acc, dish) {
-            if (acc.findIndex((o) => o.CuisineName === dish.cuisine) === -1) {
-                acc.push({ CuisineName: dish.cuisine, Selected: false });
-            }
-            return acc;
-        }, [])
-        .concat([{ CuisineName: "All", Selected: true }])
-        .sortBy([o => o.CuisineName])
-        .value();
-}
+// lodash
+import _ from 'lodash'
+
+// service call for fetching cuisines
+import { buildCusines } from '../service'
 
 class Store {
     dishes = []
@@ -28,7 +21,7 @@ class Store {
 
     setDishes = dishes => {
         this.dishes = dishes;
-        this.cuisines = BuildCusines(dishes);
+        this.cuisines = buildCusines(dishes);
     }
 
     setCurrentSessionId = sessionId => {
@@ -48,7 +41,6 @@ class Store {
     }
 
     updateSessionStatus = (sessionId, status) => {
-
         if (toJS(this.selectedSessionId) === sessionId) {
             this.selectedSessionId = null;
         }
