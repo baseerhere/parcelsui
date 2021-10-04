@@ -36,3 +36,172 @@
     transform: rotate(360deg);
   }
 }
+
+.login-form {
+  width: 340px;
+  margin: 50px auto;
+  font-size: 15px;
+}
+.login-form form {
+  margin-bottom: 15px;
+  background: #f7f7f7;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+.login-form h2 {
+  margin: 0 0 15px;
+}
+.form-control,
+.btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.cuisinesMenu {
+  margin-left: 10px;
+}
+.cuisinesMenu > button {
+  margin: 2px;
+}
+
+.parcel-wrapper {
+  display: grid;
+  grid-template-columns: 5fr 4fr 2fr;
+  margin-left: 10px;
+  height: 80vh;
+}
+
+.parcel-wrapper > div {
+  margin: 2px;
+}
+.menusection {
+  min-height: 450px;
+  max-height: 450px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.kitchenOrderSection {
+  min-height: 650px;
+  max-height: 650px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/** Dish **/
+.dishesContainer {
+  float: left;
+  width: 480px;
+  min-height: 320px;
+  max-height: 320px;
+  overflow-y: auto;
+  border: 1px solid #e1f2d4;
+  border-radius: 4px 4px;
+  margin-left: 18px;
+}
+
+.dishContainer {
+  width: 110px;
+  height: 186px;
+  background-color: #adadad;
+  float: left;
+  margin: 2px;
+  margin-bottom: 4px;
+}
+.dishTitle {
+  font-family: "Arial Rounded MT";
+  width: 110px;
+  background-color: #585555;
+  border-radius: 4px 4px;
+  color: #ffffff;
+  min-height: 24px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.dishOrderButton {
+  font-family: "Arial Rounded MT";
+  width: 110px;
+  background-color: #f00;
+  border-radius: 4px 4px;
+  color: #ffffff;
+  min-height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.disabledButton {
+  background-color: #cdcdcd;
+}
+
+.dishIconContainer {
+  margin-left: 14px;
+  margin-top: 4px;
+  width: 80px;
+  height: 80px;
+  background-color: #808080;
+}
+
+.dishIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.dishOrderSection {
+  height: 30px;
+  background-color: #fff;
+  width: 110px;
+}
+
+.dishOrderBorder {
+  float: left;
+  height: 30px;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.dishPlusMinus {
+  width: 30px;
+  height: 30px;
+  float: left;
+  cursor: pointer;
+}
+
+.dishPlusMinus img {
+  margin: 5px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.dishOrderCount {
+  width: 46px;
+  height: 26px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 2px;
+  font-size: 16px;
+  float: left;
+  border: 1px solid #ccc;
+  border-radius: 4px 4px;
+}
+
+.dishPrice {
+  font-family: Arial Rounded MT;
+  text-align: center;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
